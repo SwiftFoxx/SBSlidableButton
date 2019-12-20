@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		442AF03823A6CE8C0034711F /* SBSlidableButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 442AF03623A6CE8C0034711F /* SBSlidableButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44A3929223AD67D200DB5771 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A3929123AD67D200DB5771 /* Constants.swift */; };
+		44A3929623AD683600DB5771 /* SBSlidableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A3929523AD683600DB5771 /* SBSlidableButton.swift */; };
+		44A3929923AD687300DB5771 /* SBSlidableButtonValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A3929823AD687300DB5771 /* SBSlidableButtonValues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		442AF03323A6CE8C0034711F /* SBSlidableButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SBSlidableButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		442AF03623A6CE8C0034711F /* SBSlidableButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSlidableButton.h; sourceTree = "<group>"; };
 		442AF03723A6CE8C0034711F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44A3929123AD67D200DB5771 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		44A3929523AD683600DB5771 /* SBSlidableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSlidableButton.swift; sourceTree = "<group>"; };
+		44A3929823AD687300DB5771 /* SBSlidableButtonValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSlidableButtonValues.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +54,59 @@
 			children = (
 				442AF03623A6CE8C0034711F /* SBSlidableButton.h */,
 				442AF03723A6CE8C0034711F /* Info.plist */,
+				44A3929423AD681E00DB5771 /* Views */,
+				44A3929A23AD689D00DB5771 /* Interactors */,
+				44A3929B23AD68AB00DB5771 /* Workers */,
+				44A3929C23AD68B500DB5771 /* Routes */,
+				44A3929723AD685400DB5771 /* Values */,
+				44A3929323AD67D700DB5771 /* Helpers */,
 			);
 			path = SBSlidableButton;
+			sourceTree = "<group>";
+		};
+		44A3929323AD67D700DB5771 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				44A3929123AD67D200DB5771 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		44A3929423AD681E00DB5771 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44A3929523AD683600DB5771 /* SBSlidableButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		44A3929723AD685400DB5771 /* Values */ = {
+			isa = PBXGroup;
+			children = (
+				44A3929823AD687300DB5771 /* SBSlidableButtonValues.swift */,
+			);
+			path = Values;
+			sourceTree = "<group>";
+		};
+		44A3929A23AD689D00DB5771 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		44A3929B23AD68AB00DB5771 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		44A3929C23AD68B500DB5771 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Routes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +152,7 @@
 				TargetAttributes = {
 					442AF03223A6CE8C0034711F = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -131,6 +189,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44A3929923AD687300DB5771 /* SBSlidableButtonValues.swift in Sources */,
+				44A3929623AD683600DB5771 /* SBSlidableButton.swift in Sources */,
+				44A3929223AD67D200DB5771 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +249,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -245,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -260,6 +321,7 @@
 		442AF03C23A6CE8C0034711F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.framework.swiftfox.SBSlidableButton;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +346,7 @@
 		442AF03D23A6CE8C0034711F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
